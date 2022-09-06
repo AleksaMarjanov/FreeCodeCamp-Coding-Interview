@@ -17,12 +17,13 @@ function sym(...args) {
   function reducer (result, arr) {
     const compare = new Set(arr)
     for(let val of compare) {
-        if(result.has.val) {
+        if(result.has(val)) {
             result.delete(val)
         } else {
             result.add(val)
         }
     }
+    console.log('This is the final result',result)
     return result;
   }
   
